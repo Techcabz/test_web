@@ -5,7 +5,7 @@ import { Product } from '../models/product'
 import { db } from '../utils/database'
 
 export default function Home({ products }) {
- 
+  console.log(products)
   return (
     <div className={styles.container}>
       <Head>
@@ -15,13 +15,15 @@ export default function Home({ products }) {
       </Head>
 
       <main className={styles.main}>
-        {
-          products.map((item, index) => {
-
-            console.log(item)
-
-          })
-        }
+        xxxx
+        <div style={{ width: '100%', heigth: '100vw', backgroundColor: 'red' }}>
+          x
+          {
+            products.map((item, index) => (
+              <h1>{item.name}</h1>
+            ))
+          }
+        </div>
       </main>
 
       <footer className={styles.footer}>
